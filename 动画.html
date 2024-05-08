@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        @keyframes move {
+            0% {
+                transform: translateX(0px);
+            }
+
+            50% {
+                transform: translateX(1000px);
+            }
+
+            100% {
+                transform: translateX(500px);
+            }
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* name必需 */
+            animation-name: move;
+            /* 持续时间必需 */
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+            animation-direction: reverse;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

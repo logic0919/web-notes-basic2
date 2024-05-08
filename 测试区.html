@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户界面样式——表单轮廓和防止拖拽文本域</title>
+    <style>
+        .one {
+            outline: none;
+            /* 或者写成outline:0; */
+        }
+
+        .two {
+            resize: none;
+            outline: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <input class="one" type="text">
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <textarea class="two" name="" id="" cols="30" rows="10">这个文本域最前面没有空格</textarea>
+    <textarea name="" id="" cols="30" rows="10">
+
+    这样写的话里面有
+    </textarea>
+</body>
+
+</html>
